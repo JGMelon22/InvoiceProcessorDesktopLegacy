@@ -48,6 +48,7 @@
             // 
             // btnImportarUnico
             // 
+            this.btnImportarUnico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImportarUnico.Location = new System.Drawing.Point(11, 20);
             this.btnImportarUnico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnImportarUnico.Name = "btnImportarUnico";
@@ -59,6 +60,7 @@
             // 
             // btnImportarMultiplos
             // 
+            this.btnImportarMultiplos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImportarMultiplos.Location = new System.Drawing.Point(158, 20);
             this.btnImportarMultiplos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnImportarMultiplos.Name = "btnImportarMultiplos";
@@ -70,6 +72,7 @@
             // 
             // btnListarTodas
             // 
+            this.btnListarTodas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListarTodas.Location = new System.Drawing.Point(304, 20);
             this.btnListarTodas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnListarTodas.Name = "btnListarTodas";
@@ -81,6 +84,7 @@
             // 
             // btnBuscarNumero
             // 
+            this.btnBuscarNumero.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarNumero.Location = new System.Drawing.Point(161, 20);
             this.btnBuscarNumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscarNumero.Name = "btnBuscarNumero";
