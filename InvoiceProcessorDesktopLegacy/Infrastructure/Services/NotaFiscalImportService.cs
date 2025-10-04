@@ -33,7 +33,7 @@ namespace InvoiceProcessorDesktopLegacy.Infrastructure.Services
                         {
                             var notaFiscal = ParseXmlFile(filePath);
 
-                            var exists = context.NotasFiscais.FindAsync(notaFiscal.Numero);
+                            var exists = await context.NotasFiscais.FindAsync(notaFiscal.Numero);
 
                             if (exists != null)
                             {
@@ -111,7 +111,7 @@ namespace InvoiceProcessorDesktopLegacy.Infrastructure.Services
             var nota = new NotaFiscal
             {
                 Numero = int.Parse(root.Element("Numero")?.Value ?? "0"),
-                CNPJPrestador = root.Element("Prestado")?.Element("CNPJ")?.Value ?? string.Empty,
+                CNPJPrestador = root.Element("Prestador")?.Element("CNPJ")?.Value ?? string.Empty,
                 CNPJTomador = root.Element("Tomador")?.Element("CNPJ")?.Value ?? string.Empty,
                 DataEmissao = DateTime.Parse(root.Element("DataEmissao")?.Value ?? DateTime.MinValue.ToString()),
                 DescricaoServico = root.Element("Servico")?.Element("Descricao")?.Value ?? string.Empty,

@@ -50,7 +50,7 @@
             // 
             this.btnImportarUnico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImportarUnico.Location = new System.Drawing.Point(11, 20);
-            this.btnImportarUnico.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImportarUnico.Margin = new System.Windows.Forms.Padding(2);
             this.btnImportarUnico.Name = "btnImportarUnico";
             this.btnImportarUnico.Size = new System.Drawing.Size(135, 28);
             this.btnImportarUnico.TabIndex = 0;
@@ -62,7 +62,7 @@
             // 
             this.btnImportarMultiplos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnImportarMultiplos.Location = new System.Drawing.Point(158, 20);
-            this.btnImportarMultiplos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnImportarMultiplos.Margin = new System.Windows.Forms.Padding(2);
             this.btnImportarMultiplos.Name = "btnImportarMultiplos";
             this.btnImportarMultiplos.Size = new System.Drawing.Size(135, 28);
             this.btnImportarMultiplos.TabIndex = 1;
@@ -74,7 +74,7 @@
             // 
             this.btnListarTodas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnListarTodas.Location = new System.Drawing.Point(304, 20);
-            this.btnListarTodas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnListarTodas.Margin = new System.Windows.Forms.Padding(2);
             this.btnListarTodas.Name = "btnListarTodas";
             this.btnListarTodas.Size = new System.Drawing.Size(135, 28);
             this.btnListarTodas.TabIndex = 2;
@@ -86,7 +86,7 @@
             // 
             this.btnBuscarNumero.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscarNumero.Location = new System.Drawing.Point(161, 20);
-            this.btnBuscarNumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarNumero.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarNumero.Name = "btnBuscarNumero";
             this.btnBuscarNumero.Size = new System.Drawing.Size(75, 24);
             this.btnBuscarNumero.TabIndex = 3;
@@ -97,10 +97,11 @@
             // txtNumero
             // 
             this.txtNumero.Location = new System.Drawing.Point(56, 24);
-            this.txtNumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumero.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(91, 20);
             this.txtNumero.TabIndex = 4;
+            this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_KeyPress);
             // 
             // lblNumero
             // 
@@ -120,7 +121,7 @@
             this.dgvNotasFiscais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNotasFiscais.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvNotasFiscais.Location = new System.Drawing.Point(2, 15);
-            this.dgvNotasFiscais.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvNotasFiscais.Margin = new System.Windows.Forms.Padding(2);
             this.dgvNotasFiscais.Name = "dgvNotasFiscais";
             this.dgvNotasFiscais.ReadOnly = true;
             this.dgvNotasFiscais.RowHeadersWidth = 51;
@@ -145,9 +146,9 @@
             this.groupBoxOperacoes.Controls.Add(this.btnImportarMultiplos);
             this.groupBoxOperacoes.Controls.Add(this.btnListarTodas);
             this.groupBoxOperacoes.Location = new System.Drawing.Point(11, 12);
-            this.groupBoxOperacoes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxOperacoes.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxOperacoes.Name = "groupBoxOperacoes";
-            this.groupBoxOperacoes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxOperacoes.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxOperacoes.Size = new System.Drawing.Size(450, 61);
             this.groupBoxOperacoes.TabIndex = 8;
             this.groupBoxOperacoes.TabStop = false;
@@ -159,9 +160,9 @@
             this.groupBoxBusca.Controls.Add(this.txtNumero);
             this.groupBoxBusca.Controls.Add(this.btnBuscarNumero);
             this.groupBoxBusca.Location = new System.Drawing.Point(480, 12);
-            this.groupBoxBusca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxBusca.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxBusca.Name = "groupBoxBusca";
-            this.groupBoxBusca.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxBusca.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxBusca.Size = new System.Drawing.Size(270, 61);
             this.groupBoxBusca.TabIndex = 9;
             this.groupBoxBusca.TabStop = false;
@@ -171,9 +172,9 @@
             // 
             this.groupBoxResultados.Controls.Add(this.dgvNotasFiscais);
             this.groupBoxResultados.Location = new System.Drawing.Point(11, 85);
-            this.groupBoxResultados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxResultados.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxResultados.Name = "groupBoxResultados";
-            this.groupBoxResultados.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxResultados.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxResultados.Size = new System.Drawing.Size(750, 366);
             this.groupBoxResultados.TabIndex = 10;
             this.groupBoxResultados.TabStop = false;
@@ -189,10 +190,11 @@
             this.Controls.Add(this.groupBoxOperacoes);
             this.Controls.Add(this.lblStatus);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Importação de Notas Fiscais - UneCont";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNotasFiscais)).EndInit();
             this.groupBoxOperacoes.ResumeLayout(false);
             this.groupBoxBusca.ResumeLayout(false);
