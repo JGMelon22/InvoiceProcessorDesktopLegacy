@@ -6,6 +6,9 @@ Sistema desktop Windows Forms para processamento e gerenciamento de Notas Fiscai
 
 Aplicação desktop desenvolvida em C# (.NET Framework) que permite importar, armazenar e consultar notas fiscais eletrônicas a partir de arquivos XML. O sistema utiliza Entity Framework 6 para persistência de dados em banco de dados SQL Server.
 
+## Interface
+<img width="776" height="522" alt="Captura de tela 2025-10-04 123756" src="https://github.com/user-attachments/assets/7619b026-889d-4ff9-9653-09852ef7f7d6" />
+
 ## Funcionalidades
 
 - Importação de nota fiscal única (arquivo XML)
