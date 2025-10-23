@@ -155,7 +155,7 @@ namespace InvoiceProcessorDesktopLegacy
 
         private async void btnBuscarNumero_Click(object sender, System.EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(Text))
+            if (string.IsNullOrWhiteSpace(txtNumero.Text))
             {
                 MessageBox.Show(
                     "Por favor, informe o número da nota fiscal",
@@ -168,8 +168,6 @@ namespace InvoiceProcessorDesktopLegacy
             }
 
             int.TryParse(txtNumero.Text, out int numero);
-
-            // int numero = Convert.ToInt32(txtNumero.Text);
 
             try
             {
